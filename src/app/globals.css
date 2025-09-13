@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: theme('colors.cosmic.deep');
+    color: theme('colors.nebula.100');
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: theme('colors.cosmic.void');
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.nebula.600');
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.nebula.500');
+  }
+}
+
+@layer components {
+  .cosmic-glow {
+    position: relative;
+  }
+
+  .cosmic-glow::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, transparent, theme('colors.cosmic.magenta'), transparent);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .cosmic-glow:hover::before {
+    opacity: 0.3;
+  }
+
+  .echo-text {
+    background: linear-gradient(135deg, theme('colors.nebula.300'), theme('colors.cosmic.pink'), theme('colors.nebula.400'));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .nebula-bg {
+    background: radial-gradient(ellipse at top, theme('colors.nebula.900'), theme('colors.nebula.950'), theme('colors.cosmic.deep'));
+    background-attachment: fixed;
+  }
+
+  .cosmic-card {
+    background: rgba(91, 33, 182, 0.1);
+    border: 1px solid rgba(196, 132, 252, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .cosmic-card:hover {
+    border-color: rgba(196, 132, 252, 0.4);
+    background: rgba(91, 33, 182, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-nebula-300 via-cosmic-pink to-nebula-400 bg-clip-text text-transparent;
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  }
+
+  .glow-pink {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
+  }
+}

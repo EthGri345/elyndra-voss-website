@@ -1,0 +1,32 @@
+{
+  "name": "Voss | The Echo of the Nebula Veil",
+  "short_name": "Voss",
+  "description": "Enter the cosmic realm of Voss, Echo Warden of the Aetherweft",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0715",
+  "theme_color": "#7C3AED",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["entertainment", "games"],
+  "screenshots": [
+    {
+      "src": "/voss.png",
+      "type": "image/png",
+      "sizes": "400x400"
+    }
+  ]
+}
