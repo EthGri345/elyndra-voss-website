@@ -27,7 +27,41 @@ const defaultMedia: MediaItem[] = [
     title: 'Voss Portrait',
     description: 'The Echo Warden in her ethereal form'
   },
-  // Add more default items as placeholders
+  {
+    id: '2',
+    type: 'image',
+    src: '/Untitled_Artwork.jpeg',
+    title: 'Cosmic Artwork I',
+    description: 'Visions from the Aetherweft dimensions'
+  },
+  {
+    id: '3',
+    type: 'image',
+    src: '/Untitled_Artwork 1.jpeg',
+    title: 'Cosmic Artwork II',
+    description: 'Echoes of parallel realities'
+  },
+  {
+    id: '4',
+    type: 'image',
+    src: '/Untitled_Artwork 2.jpeg',
+    title: 'Cosmic Artwork III',
+    description: 'Fragments of the Nebula Veil'
+  },
+  {
+    id: '5',
+    type: 'image',
+    src: '/Untitled_Artwork (1).jpeg',
+    title: 'Cosmic Artwork IV',
+    description: 'Dreams captured in the Shard of Reverie'
+  },
+  {
+    id: '6',
+    type: 'video',
+    src: '/generated_video.mp4',
+    title: 'Aetherweft Motion',
+    description: 'Dynamic visions of the cosmic realm in motion'
+  }
 ]
 
 export function GallerySection({ media = defaultMedia }: GallerySectionProps) {
