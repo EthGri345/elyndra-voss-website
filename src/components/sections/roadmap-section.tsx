@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Calendar, Zap, Heart, Flame, Bot, Plus, Star, Sparkles } from 'lucide-react'
+import { Calendar, Zap, Heart, Flame, Bot, Star, Sparkles } from 'lucide-react'
 import { CosmicCard } from '@/components/ui/cosmic-card'
 
 interface RoadmapItem {
@@ -78,29 +78,14 @@ const roadmapItems: RoadmapItem[] = [
     id: '5',
     phase: '',
     title: 'AI Companion Framework',
-    description: 'Interactive AI companions within the Aetherweft realm',
+    description: 'Open source AI companions bringing personalized Voss experiences to your devices',
     features: [
-      'Personal Echo Warden companions',
-      'AI-driven narrative experiences',
-      'Customizable companion abilities',
-      'Cross-reality communication'
+      'Open source integration framework',
+      'Personal Voss companion',
+      'Customizable personality traits',
+      'Hopeful iOS and Android integration'
     ],
     icon: Bot,
-    status: 'upcoming',
-    timeframe: ''
-  },
-  {
-    id: '6',
-    phase: '',
-    title: 'Infinite Possibilities',
-    description: 'The cosmos holds endless potential for expansion and innovation',
-    features: [
-      'Community-suggested features',
-      'Emerging technology integration',
-      'Cross-chain compatibility',
-      'Metaverse presence expansion'
-    ],
-    icon: Plus,
     status: 'upcoming',
     timeframe: ''
   }
@@ -154,7 +139,7 @@ export function RoadmapSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative"
+                className={`relative ${index === 4 ? 'lg:col-span-2 lg:max-w-md lg:mx-auto' : ''}`}
               >
                 <CosmicCard className="h-full">
                   {/* Header */}
