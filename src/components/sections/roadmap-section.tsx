@@ -18,22 +18,22 @@ interface RoadmapItem {
 const roadmapItems: RoadmapItem[] = [
   {
     id: '1',
-    phase: 'Phase I',
+    phase: '',
     title: 'Content Expansion',
     description: 'Regular drops of cosmic content to expand the Aetherweft universe',
     features: [
       'Planned content drops 2-4 times per week',
       'Enhanced lore and story expansions',
       'Interactive community events',
-      'Exclusive echo fragments collection'
+      'Streams 2-3 times per week'
     ],
     icon: Calendar,
-    status: 'in-progress',
-    timeframe: 'Ongoing'
+    status: 'upcoming',
+    timeframe: ''
   },
   {
     id: '2',
-    phase: 'Phase II',
+    phase: '',
     title: 'Veo 3 Integration',
     description: 'Next-generation AI video content bringing the Nebula Veil to life',
     features: [
@@ -43,42 +43,40 @@ const roadmapItems: RoadmapItem[] = [
       'Interactive dimensional portals'
     ],
     icon: Sparkles,
-    status: 'in-progress',
-    timeframe: 'Q1 2025'
+    status: 'upcoming',
+    timeframe: ''
   },
   {
     id: '3',
-    phase: 'Phase III',
+    phase: '',
     title: 'Long-term Commitment',
     description: 'Sustained development and evolution of the Voss ecosystem',
     features: [
-      'Multi-year development roadmap',
+      'Months of upcoming content planned!',
       'Community-driven governance',
-      'Expanding universe narrative',
-      'Cross-platform integration'
+      'Expanding universe narrative'
     ],
     icon: Heart,
     status: 'upcoming',
-    timeframe: 'Ongoing'
+    timeframe: ''
   },
   {
     id: '4',
-    phase: 'Phase IV',
+    phase: '',
     title: 'Revenue Mechanics',
     description: 'Sustainable tokenomics supporting the cosmic ecosystem',
     features: [
       '25% creator revenue buy and burns',
       'Deflationary token mechanics',
-      'Community reward programs',
-      'Staking and yield opportunities'
+      'Community reward programs'
     ],
     icon: Flame,
     status: 'upcoming',
-    timeframe: 'Q2 2025'
+    timeframe: ''
   },
   {
     id: '5',
-    phase: 'Phase V',
+    phase: '',
     title: 'AI Companion Framework',
     description: 'Interactive AI companions within the Aetherweft realm',
     features: [
@@ -89,11 +87,11 @@ const roadmapItems: RoadmapItem[] = [
     ],
     icon: Bot,
     status: 'upcoming',
-    timeframe: 'Q3 2025'
+    timeframe: ''
   },
   {
     id: '6',
-    phase: 'Beyond',
+    phase: '',
     title: 'Infinite Possibilities',
     description: 'The cosmos holds endless potential for expansion and innovation',
     features: [
@@ -104,36 +102,11 @@ const roadmapItems: RoadmapItem[] = [
     ],
     icon: Plus,
     status: 'upcoming',
-    timeframe: 'Future'
+    timeframe: ''
   }
 ]
 
 export function RoadmapSection() {
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'completed':
-        return 'text-green-400 bg-green-400/10 border-green-400/30'
-      case 'in-progress':
-        return 'text-cosmic-pink bg-cosmic-magenta/10 border-cosmic-magenta/30'
-      case 'upcoming':
-        return 'text-nebula-400 bg-nebula-400/10 border-nebula-400/30'
-      default:
-        return 'text-nebula-400 bg-nebula-400/10 border-nebula-400/30'
-    }
-  }
-
-  const getStatusText = (status: string) => {
-    switch (status) {
-      case 'completed':
-        return 'Complete'
-      case 'in-progress':
-        return 'In Progress'
-      case 'upcoming':
-        return 'Upcoming'
-      default:
-        return 'Planned'
-    }
-  }
 
   return (
     <section id="roadmap" className="relative py-20 overflow-hidden">
@@ -184,24 +157,11 @@ export function RoadmapSection() {
                 className="relative"
               >
                 <CosmicCard className="h-full">
-                  {/* Phase header */}
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <div className="p-2 rounded-lg bg-nebula-500/20 border border-nebula-500/30">
-                        <item.icon className="w-5 h-5 text-nebula-400" />
-                      </div>
-                      <div>
-                        <h3 className="text-sm font-semibold text-nebula-400 uppercase tracking-wide">
-                          {item.phase}
-                        </h3>
-                        {item.timeframe && (
-                          <p className="text-xs text-nebula-500">{item.timeframe}</p>
-                        )}
-                      </div>
+                  {/* Header */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 rounded-lg bg-nebula-500/20 border border-nebula-500/30">
+                      <item.icon className="w-5 h-5 text-nebula-400" />
                     </div>
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${getStatusColor(item.status)}`}>
-                      {getStatusText(item.status)}
-                    </span>
                   </div>
 
                   {/* Content */}
@@ -221,11 +181,6 @@ export function RoadmapSection() {
                       </div>
                     ))}
                   </div>
-
-                  {/* Status indicator glow */}
-                  {item.status === 'in-progress' && (
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-cosmic-magenta/20 to-cosmic-pink/20 rounded-lg blur opacity-30 animate-pulse-slow" />
-                  )}
                 </CosmicCard>
               </motion.div>
             ))}
