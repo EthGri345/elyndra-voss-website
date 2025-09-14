@@ -53,7 +53,7 @@ const defaultMedia: MediaItem[] = [
     type: 'image',
     src: '/Untitled_Artwork (1).jpeg',
     title: 'Cosmic Artwork IV',
-    description: 'Hand drawn art dreams captured in the Crypto Crystal'
+    description: 'Hand drawn art dreams captured in the Shadow Market Crystal'
   },
   {
     id: '5.5',
@@ -66,42 +66,42 @@ const defaultMedia: MediaItem[] = [
     id: '6',
     type: 'video',
     src: '/generated_video.mp4',
-    title: 'Aetherweft Motion I',
+    title: 'Shadow Market Motion I',
     description: 'Dynamic visions of the cosmic realm in motion'
   },
   {
     id: '7',
     type: 'video',
     src: '/generated_video (1).mp4',
-    title: 'Aetherweft Motion II',
+    title: 'Shadow Market Motion II',
     description: 'Resonant harmonics dancing through dimensional space'
   },
   {
     id: '8',
     type: 'video',
     src: '/generated_video (3).mp4',
-    title: 'Aetherweft Motion III',
+    title: 'Shadow Market Motion III',
     description: 'Echoes of the Elder Harmonics weaving reality'
   },
   {
     id: '9',
     type: 'video',
     src: '/generated_video (4).mp4',
-    title: 'Aetherweft Motion IV',
+    title: 'Shadow Market Motion IV',
     description: 'The Nebula Veil shifting through parallel dimensions'
   },
   {
     id: '10',
     type: 'video',
     src: '/generated_video (5).mp4',
-    title: 'Aetherweft Motion V',
+    title: 'Shadow Market Motion V',
     description: 'Cosmic symphonies of the infinite tapestry'
   },
   {
     id: '10.5',
     type: 'video',
     src: '/generated_video (6).mp4',
-    title: 'Aetherweft Motion VI',
+    title: 'Shadow Market Motion VI',
     description: 'Dimensional harmonics in perfect resonance'
   },
   {
@@ -115,7 +115,7 @@ const defaultMedia: MediaItem[] = [
     id: '12',
     type: 'video',
     src: '/generated_video (7).mp4',
-    title: 'Aetherweft Motion VII',
+    title: 'Shadow Market Motion VII',
     description: 'Latest echoes from the ever-expanding cosmic realm'
   },
   {
@@ -129,7 +129,7 @@ const defaultMedia: MediaItem[] = [
     id: '14',
     type: 'video',
     src: '/generated_video (8).mp4',
-    title: 'Aetherweft Motion VIII',
+    title: 'Shadow Market Motion VIII',
     description: 'The newest manifestations of cosmic harmony'
   }
 ]
@@ -191,11 +191,11 @@ export function GallerySection({ media = defaultMedia }: GallerySectionProps) {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
-            Echoes of the Aetherweft
+            Echoes of the Shadow Markets
           </h2>
           <p className="text-lg text-nebula-300">
             Glimpses into the mystical realm where Maven weaves her market magic,
-            captured through the digital lens of the Crypto Crystal.
+            captured through the mystical lens of the Shadow Market Crystal.
           </p>
         </motion.div>
 

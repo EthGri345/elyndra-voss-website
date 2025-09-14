@@ -20,7 +20,7 @@ const roadmapItems: RoadmapItem[] = [
     id: '1',
     phase: '',
     title: 'Content Expansion',
-    description: 'Regular drops of cosmic content to expand the Aetherweft universe',
+    description: 'Regular drops of shadow market content to expand the Maven universe',
     features: [
       'Planned content drops 2-4 times per week',
       'Enhanced lore and story expansions',
@@ -117,7 +117,7 @@ export function RoadmapSection() {
           </h2>
           <p className="text-lg text-nebula-300 mb-4">
             Journey through the phases of evolution as Maven expands her influence across
-            the infinite dimensions of the Aetherweft, weaving new realities and possibilities.
+            the infinite dimensions of the Shadow Markets, weaving new trading realities and possibilities.
           </p>
           <div className="flex items-center justify-center gap-2 text-cosmic-pink">
             <Star className="w-4 h-4" />
@@ -190,7 +190,7 @@ export function RoadmapSection() {
             </h3>
             <p className="text-nebula-300 mb-6">
               Be part of Maven&apos;s evolving story as we expand across infinite realities.
-              Every echo matters, every voice shapes the Aetherweft.
+              Every trade matters, every holder shapes the Shadow Markets.
             </p>
             <div className="text-sm text-nebula-400 italic">
               &quot;In the grand symphony of existence, even the smallest echo can reshape the whole.&quot;

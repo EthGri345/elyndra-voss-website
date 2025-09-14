@@ -4,18 +4,18 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CosmicCard } from '@/components/ui/cosmic-card'
 import { FloatingElement } from '@/components/ui/floating-element'
-import { elyndraData, cosmicRealms, echoAbilities } from '@/lib/data'
+import { elyndraData, echoAbilities } from '@/lib/data'
 import { Sparkles, Zap, Heart, Eye } from 'lucide-react'
 
 const tabIcons = {
   origin: Sparkles,
-  realms: Eye,
+  shadowmarkets: Eye,
   powers: Zap,
   prayer: Heart
 }
 
 export function LoreSection() {
-  const [activeTab, setActiveTab] = useState<'origin' | 'realms' | 'powers' | 'prayer'>('origin')
+  const [activeTab, setActiveTab] = useState<'origin' | 'shadowmarkets' | 'powers' | 'prayer'>('origin')
 
   const tabVariants = {
     hidden: { opacity: 0, y: 15 },
@@ -57,7 +57,7 @@ export function LoreSection() {
     </div>
   )
 
-  const renderRealmsContent = () => (
+  const renderShadowMarketsContent = () => (
     <motion.div
       className="space-y-8"
       variants={tabVariants}
@@ -65,30 +65,61 @@ export function LoreSection() {
       animate="visible"
       exit="exit"
     >
-      <h3 className="text-3xl font-bold text-gradient text-center mb-8">Cosmic Realms</h3>
-      <div className="grid lg:grid-cols-3 gap-6">
-        {cosmicRealms.map((realm, index) => (
-          <motion.div
-            key={realm.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.1 }}
-          >
-            <CosmicCard className="h-full">
-              <div className="space-y-4">
-                <h4 className="text-xl font-semibold text-cosmic-pink">{realm.name}</h4>
-                <p className="text-nebula-300 text-sm leading-relaxed">
-                  {realm.description}
-                </p>
-                <div className="pt-2 border-t border-nebula-700">
-                  <p className="text-xs text-nebula-400 italic">
-                    {realm.significance}
+      <h3 className="text-3xl font-bold text-gradient text-center mb-8">The Shadow Markets Revealed</h3>
+      <div className="max-w-4xl mx-auto">
+        <CosmicCard className="p-8">
+          <div className="space-y-6">
+            <div className="text-center mb-6">
+              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-purple-600 to-red-600 flex items-center justify-center mb-4 animate-pulse">
+                <Eye className="w-10 h-10 text-white" />
+              </div>
+              <h4 className="text-2xl font-bold text-cosmic-pink">The Hidden Architecture of Control</h4>
+            </div>
+
+            <div className="space-y-4 text-nebula-200 leading-relaxed">
+              <p className="text-lg">
+                The Shadow Markets are not merely trading platforms - they are the invisible architecture through which global financial control is exercised. Beyond the visible exchanges lies a network of interconnected systems where true price discovery occurs.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
+                <div className="space-y-3">
+                  <h5 className="text-lg font-semibold text-cosmic-pink">The Inner Circle</h5>
+                  <p className="text-sm">
+                    A select group of market makers, central banks, and institutional players who coordinate through hidden channels. They move markets through synchronized actions, creating artificial scarcity and abundance at will.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <h5 className="text-lg font-semibold text-cosmic-pink">Dark Pool Operations</h5>
+                  <p className="text-sm">
+                    Massive trades executed away from public view, allowing major players to accumulate or distribute positions without revealing their intentions to retail traders.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <h5 className="text-lg font-semibold text-cosmic-pink">Algorithmic Puppeteers</h5>
+                  <p className="text-sm">
+                    High-frequency trading algorithms that can manipulate prices in milliseconds, creating false breakouts and liquidity traps to capture retail money.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <h5 className="text-lg font-semibold text-cosmic-pink">Information Asymmetry</h5>
+                  <p className="text-sm">
+                    The deliberate creation of information gaps, where insiders trade on news before it reaches the public, maintaining perpetual advantage over retail participants.
                   </p>
                 </div>
               </div>
-            </CosmicCard>
-          </motion.div>
-        ))}
+
+              <div className="mt-8 p-6 bg-nebula-900/40 rounded-lg border border-nebula-700/40">
+                <h5 className="text-lg font-semibold text-cosmic-pink mb-3">Maven&apos;s Role in the System</h5>
+                <p className="text-sm">
+                  Maven exists as both participant and observer within this hidden realm. She understands that true market making is not about providing liquidity, but about shepherding the collective consciousness of traders toward predetermined outcomes. She is the spirit that animates the shadow system - the one who understands that markets are not free, but carefully orchestrated theaters of wealth transfer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </CosmicCard>
       </div>
     </motion.div>
   )
@@ -175,8 +206,8 @@ export function LoreSection() {
     switch (activeTab) {
       case 'origin':
         return renderOriginContent()
-      case 'realms':
-        return renderRealmsContent()
+      case 'shadowmarkets':
+        return renderShadowMarketsContent()
       case 'powers':
         return renderPowersContent()
       case 'prayer':

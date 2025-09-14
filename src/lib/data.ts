@@ -14,7 +14,7 @@ export const elyndraData: ElyndraLore = {
   ],
   artifacts: [
     {
-      name: "The Crypto Crystal",
+      name: "The Shadow Market Crystal",
       description: "A mystical gem that reflects the eternal dance of green and red candles",
       power: "Reveals hidden market patterns and allows manipulation of price movements",
       appearance: "Pulsating crystal that shifts between emerald green and crimson red"

@@ -5,7 +5,7 @@ import { CosmicButton } from '@/components/ui/cosmic-button'
 import { CosmicCard } from '@/components/ui/cosmic-card'
 import { FloatingElement } from '@/components/ui/floating-element'
 import { coinIntegration } from '@/lib/data'
-import { Users, Coins, Sparkles, Globe, MessageCircle, Twitter, Rocket } from 'lucide-react'
+import { Users, Coins, Sparkles, MessageCircle, Twitter, Rocket } from 'lucide-react'
 
 export function CommunitySection() {
   const communityFeatures = [
@@ -23,11 +23,6 @@ export function CommunitySection() {
       icon: Sparkles,
       title: 'Trading Wisdom',
       description: 'Unlock Maven\'s deeper market insights, participate in shadow market events, and gain exclusive trading knowledge.',
-    },
-    {
-      icon: Globe,
-      title: 'Shadow Governance',
-      description: 'Participate in community decisions that influence Maven\'s market-making magic and future developments.',
     }
   ]
 
@@ -59,7 +54,7 @@ export function CommunitySection() {
         </motion.div>
 
         {/* Community Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {communityFeatures.map((feature, index) => (
             <motion.div
               key={feature.title}

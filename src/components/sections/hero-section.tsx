@@ -7,7 +7,7 @@ import { GalaxyBackground } from '@/components/ui/galaxy-background'
 
 export function HeroSection() {
   const { scrollY } = useScroll()
-  const opacity = useTransform(scrollY, [0, 300], [1, 0])
+  const opacity = useTransform(scrollY, [0, 600], [1, 0])
 
   const handleExploreClick = () => {
     document.getElementById('lore')?.scrollIntoView({ behavior: 'smooth' })
@@ -32,7 +32,7 @@ export function HeroSection() {
       {/* Parallax container */}
       <motion.div
         className="relative z-10 container mx-auto px-6"
-        style={{ y: useTransform(scrollY, [0, 300], [0, 50]), opacity }}
+        style={{ y: useTransform(scrollY, [0, 600], [0, 50]), opacity }}
       >
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Text content */}
@@ -121,7 +121,7 @@ export function HeroSection() {
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-gradient">◈</div>
-                <div className="text-sm text-nebula-400">Crypto Crystal</div>
+                <div className="text-sm text-nebula-400">Shadow Markets</div>
               </div>
             </motion.div>
           </motion.div>
@@ -158,7 +158,7 @@ export function HeroSection() {
               <div className="absolute -bottom-8 -left-6 w-6 h-6 rounded-full bg-nebula-400/40 blur-sm" />
               <div className="absolute top-1/3 -left-8 w-4 h-4 rounded-full bg-cosmic-pink/30 blur-sm" />
 
-              {/* Crypto Crystal effect */}
+              {/* Shadow Market Crystal effect */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="w-6 h-6 rotate-45 bg-gradient-to-br from-green-400 to-red-500 opacity-60 animate-pulse"
                      style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }} />
