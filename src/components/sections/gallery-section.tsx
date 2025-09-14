@@ -25,35 +25,35 @@ const defaultMedia: MediaItem[] = [
     type: 'image',
     src: '/voss.png',
     title: 'Maven Portrait',
-    description: 'The Spirit of Market Making in her mystical form'
+    description: 'Hand drawn art of the Spirit of Market Making in her mystical form'
   },
   {
     id: '2',
     type: 'image',
     src: '/Untitled_Artwork.jpeg',
-    title: 'Cosmic Artwork I',
-    description: 'Visions from the Aetherweft dimensions'
+    title: 'Market Artwork I',
+    description: 'Hand drawn art visions from the Digital Cosmos dimensions'
   },
   {
     id: '3',
     type: 'image',
     src: '/Untitled_Artwork 1.jpeg',
-    title: 'Cosmic Artwork II',
-    description: 'Echoes of parallel realities'
+    title: 'Market Artwork II',
+    description: 'Hand drawn art echoes of parallel trading realities'
   },
   {
     id: '4',
     type: 'image',
     src: '/Untitled_Artwork 2.jpeg',
     title: 'Cosmic Artwork III',
-    description: 'Fragments of the Nebula Veil'
+    description: 'Hand drawn art fragments of the Digital Cosmos'
   },
   {
     id: '5',
     type: 'image',
     src: '/Untitled_Artwork (1).jpeg',
     title: 'Cosmic Artwork IV',
-    description: 'Dreams captured in the Shard of Reverie'
+    description: 'Hand drawn art dreams captured in the Crypto Crystal'
   },
   {
     id: '5.5',

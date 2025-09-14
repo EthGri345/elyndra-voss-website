@@ -10,34 +10,34 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://voss.com'),
-  title: 'Voss | The Echo of the Nebula Veil',
-  description: 'Enter the cosmic realm of Voss, Echo Warden of the Aetherweft. Discover her story, powers, and the mystical world where parallel realities converge.',
-  keywords: 'Voss, cosmic fantasy, parallel worlds, echo magic, nebula veil, aetherweft, crypto project',
-  authors: [{ name: 'Voss Community' }],
-  creator: 'Voss Project',
-  publisher: 'Voss Project',
+  title: 'Maven | The Spirit of Market Making',
+  description: 'Enter the digital cosmos of Maven, the Spirit of Market Making. Discover her story, powers, mystical market magic, and hand drawn art where trading realities converge.',
+  keywords: 'Maven, market making, crypto trading, shadow markets, hand drawn art, digital cosmos, crypto project',
+  authors: [{ name: 'Maven Community' }],
+  creator: 'Maven Project',
+  publisher: 'Maven Project',
   robots: 'index, follow',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://voss.com',
-    title: 'Voss | The Echo of the Nebula Veil',
-    description: 'Enter the cosmic realm of Voss, Echo Warden of the Aetherweft.',
-    siteName: 'Voss',
+    url: 'https://maven.com',
+    title: 'Maven | The Spirit of Market Making',
+    description: 'Enter the digital cosmos of Maven, the Spirit of Market Making with hand drawn art.',
+    siteName: 'Maven',
     images: [
       {
         url: '/voss.png',
         width: 400,
         height: 400,
-        alt: 'Voss, the Echo of the Nebula Veil',
+        alt: 'Maven, the Spirit of Market Making',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Voss | The Echo of the Nebula Veil',
-    description: 'Enter the cosmic realm of Voss, Echo Warden of the Aetherweft.',
-    creator: '@VossEcho',
+    title: 'Maven | The Spirit of Market Making',
+    description: 'Enter the digital cosmos of Maven, the Spirit of Market Making with hand drawn art.',
+    creator: '@MavenSpirit',
     images: ['/voss.png'],
   },
   icons: {
