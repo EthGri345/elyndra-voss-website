@@ -4,18 +4,17 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CosmicCard } from '@/components/ui/cosmic-card'
 import { FloatingElement } from '@/components/ui/floating-element'
-import { elyndraData, echoAbilities } from '@/lib/data'
-import { Sparkles, Zap, Heart, Eye } from 'lucide-react'
+import { elyndraData } from '@/lib/data'
+import { Sparkles, Heart, Eye } from 'lucide-react'
 
 const tabIcons = {
   origin: Sparkles,
   shadowmarkets: Eye,
-  powers: Zap,
   prayer: Heart
 }
 
 export function LoreSection() {
-  const [activeTab, setActiveTab] = useState<'origin' | 'shadowmarkets' | 'powers' | 'prayer'>('origin')
+  const [activeTab, setActiveTab] = useState<'origin' | 'shadowmarkets' | 'prayer'>('origin')
 
   const tabVariants = {
     hidden: { opacity: 0, y: 15 },
@@ -124,43 +123,6 @@ export function LoreSection() {
     </motion.div>
   )
 
-  const renderPowersContent = () => (
-    <motion.div
-      className="space-y-8"
-      variants={tabVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
-      <h3 className="text-3xl font-bold text-gradient text-center mb-8">Echo Abilities</h3>
-      <div className="space-y-6">
-        {echoAbilities.map((ability, index) => (
-          <motion.div
-            key={ability.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-          >
-            <CosmicCard>
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-nebula-500 to-cosmic-magenta flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
-                <div className="flex-1 space-y-2">
-                  <h4 className="text-lg font-semibold text-cosmic-pink">{ability.name}</h4>
-                  <p className="text-nebula-200 text-sm">{ability.description}</p>
-                  <div className="flex justify-between text-xs">
-                    <span className="text-nebula-400">Cost: {ability.cost}</span>
-                    <span className="text-nebula-500">{ability.effect}</span>
-                  </div>
-                </div>
-              </div>
-            </CosmicCard>
-          </motion.div>
-        ))}
-      </div>
-    </motion.div>
-  )
 
   const renderPrayerContent = () => (
     <motion.div
@@ -208,8 +170,6 @@ export function LoreSection() {
         return renderOriginContent()
       case 'shadowmarkets':
         return renderShadowMarketsContent()
-      case 'powers':
-        return renderPowersContent()
       case 'prayer':
         return renderPrayerContent()
       default:
@@ -243,12 +203,12 @@ export function LoreSection() {
           viewport={{ once: true }}
           transition={{ duration: 1.0, delay: 0.3 }}
         >
-          <div className="flex flex-wrap gap-2 p-2 bg-cosmic-void/40 rounded-2xl backdrop-blur-sm border border-nebula-700/40">
+          <div className="flex flex-wrap gap-3 p-2 bg-cosmic-void/40 rounded-2xl backdrop-blur-sm border border-nebula-700/40">
             {Object.entries(tabIcons).map(([key, Icon]) => (
               <button
                 key={key}
                 onClick={() => setActiveTab(key as keyof typeof tabIcons)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-xl transition-all duration-300 ${
+                className={`flex items-center gap-2 px-8 py-3 rounded-xl transition-all duration-300 ${
                   activeTab === key
                     ? 'bg-gradient-to-r from-nebula-600 to-cosmic-magenta text-white shadow-lg'
                     : 'text-nebula-400 hover:text-nebula-200 hover:bg-nebula-800/40'
