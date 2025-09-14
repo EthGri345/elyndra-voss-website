@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { CosmicButton } from '@/components/ui/cosmic-button'
 import { CosmicCard } from '@/components/ui/cosmic-card'
 import { FloatingElement } from '@/components/ui/floating-element'
-import { coinIntegration } from '@/lib/data'
 import { Users, Coins, Sparkles, MessageCircle, Twitter, Rocket } from 'lucide-react'
 
 export function CommunitySection() {
@@ -76,62 +75,6 @@ export function CommunitySection() {
           ))}
         </div>
 
-        {/* Token Integration Showcase */}
-        <motion.div
-          className="max-w-4xl mx-auto mb-16"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <CosmicCard className="p-8" glow>
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6">
-                <h3 className="text-3xl font-bold text-gradient">The Maven Token</h3>
-                <p className="text-nebula-200 leading-relaxed">
-                  {coinIntegration.connection}
-                </p>
-                <p className="text-nebula-300 leading-relaxed">
-                  {coinIntegration.narrativeRole}
-                </p>
-
-                <div className="space-y-3">
-                  <h4 className="text-lg font-semibold text-cosmic-pink">Future Possibilities</h4>
-                  <ul className="space-y-2">
-                    {coinIntegration.futureFeatures.map((feature, index) => (
-                      <motion.li
-                        key={index}
-                        className="flex items-center gap-3 text-nebula-300"
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                      >
-                        <div className="w-2 h-2 rounded-full bg-cosmic-pink flex-shrink-0" />
-                        <span className="text-sm">{feature}</span>
-                      </motion.li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <FloatingElement intensity="medium" delay={0.5}>
-                <div className="relative">
-                  <div className="w-64 h-64 mx-auto rounded-full bg-gradient-conic from-nebula-600 via-cosmic-magenta to-nebula-600 p-1">
-                    <div className="w-full h-full rounded-full bg-cosmic-deep flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-4xl mb-2">◈</div>
-                        <div className="text-lg font-semibold text-gradient">Maven Token</div>
-                        <div className="text-sm text-nebula-400">Live & Trading</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 rounded-full bg-cosmic-glow opacity-30 animate-pulse-slow" />
-                </div>
-              </FloatingElement>
-            </div>
-          </CosmicCard>
-        </motion.div>
 
         {/* Call to Action */}
         <motion.div
