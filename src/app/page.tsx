@@ -2,6 +2,7 @@ import { HeroSection } from '@/components/sections/hero-section'
 import { PumpAnnouncement } from '@/components/sections/pump-announcement'
 import { LoreSection } from '@/components/sections/lore-section'
 import { GallerySection } from '@/components/sections/gallery-section'
+import { RoadmapSection } from '@/components/sections/roadmap-section'
 import { ChartSection } from '@/components/sections/chart-section'
 import { CommunitySection } from '@/components/sections/community-section'
 
@@ -19,6 +20,9 @@ export default function HomePage() {
 
       {/* Gallery Section */}
       <GallerySection />
+
+      {/* Roadmap Section */}
+      <RoadmapSection />
 
       {/* Chart & Trading Section */}
       <ChartSection />

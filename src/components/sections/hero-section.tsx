@@ -17,6 +17,10 @@ export function HeroSection() {
     document.getElementById('community')?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const handleRoadmapClick = () => {
+    document.getElementById('roadmap')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Galaxy Background */}
@@ -83,6 +87,13 @@ export function HeroSection() {
                 className="glow-purple"
               >
                 Explore the Aetherweft
+              </CosmicButton>
+              <CosmicButton
+                variant="secondary"
+                size="lg"
+                onClick={handleRoadmapClick}
+              >
+                View Roadmap
               </CosmicButton>
               <CosmicButton
                 variant="secondary"
