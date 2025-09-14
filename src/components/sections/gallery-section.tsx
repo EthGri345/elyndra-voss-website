@@ -59,8 +59,36 @@ const defaultMedia: MediaItem[] = [
     id: '6',
     type: 'video',
     src: '/generated_video.mp4',
-    title: 'Aetherweft Motion',
+    title: 'Aetherweft Motion I',
     description: 'Dynamic visions of the cosmic realm in motion'
+  },
+  {
+    id: '7',
+    type: 'video',
+    src: '/generated_video (1).mp4',
+    title: 'Aetherweft Motion II',
+    description: 'Resonant harmonics dancing through dimensional space'
+  },
+  {
+    id: '8',
+    type: 'video',
+    src: '/generated_video (3).mp4',
+    title: 'Aetherweft Motion III',
+    description: 'Echoes of the Elder Harmonics weaving reality'
+  },
+  {
+    id: '9',
+    type: 'video',
+    src: '/generated_video (4).mp4',
+    title: 'Aetherweft Motion IV',
+    description: 'The Nebula Veil shifting through parallel dimensions'
+  },
+  {
+    id: '10',
+    type: 'video',
+    src: '/generated_video (5).mp4',
+    title: 'Aetherweft Motion V',
+    description: 'Cosmic symphonies of the infinite tapestry'
   }
 ]
 
