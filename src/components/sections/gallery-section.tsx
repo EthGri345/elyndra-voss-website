@@ -56,6 +56,13 @@ const defaultMedia: MediaItem[] = [
     description: 'Dreams captured in the Shard of Reverie'
   },
   {
+    id: '5.5',
+    type: 'image',
+    src: '/Untitled_Artwork (3).jpeg',
+    title: 'Cosmic Artwork V',
+    description: 'Whispers from the cosmic void'
+  },
+  {
     id: '6',
     type: 'video',
     src: '/generated_video.mp4',
@@ -89,6 +96,27 @@ const defaultMedia: MediaItem[] = [
     src: '/generated_video (5).mp4',
     title: 'Aetherweft Motion V',
     description: 'Cosmic symphonies of the infinite tapestry'
+  },
+  {
+    id: '10.5',
+    type: 'video',
+    src: '/generated_video (6).mp4',
+    title: 'Aetherweft Motion VI',
+    description: 'Dimensional harmonics in perfect resonance'
+  },
+  {
+    id: '11',
+    type: 'image',
+    src: '/Untitled_Artwork (4).jpeg',
+    title: 'Cosmic Artwork VI',
+    description: 'Ethereal visions from the dimensional nexus'
+  },
+  {
+    id: '12',
+    type: 'video',
+    src: '/generated_video (7).mp4',
+    title: 'Aetherweft Motion VII',
+    description: 'Latest echoes from the ever-expanding cosmic realm'
   }
 ]
 
