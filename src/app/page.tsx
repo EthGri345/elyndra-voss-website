@@ -35,20 +35,20 @@ export default function HomePage() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
-              <h3 className="text-xl font-semibold text-gradient mb-2">Voss</h3>
-              <p className="text-nebula-400 text-sm">The Echo of the Nebula Veil</p>
+              <h3 className="text-xl font-semibold text-gradient mb-2">Maven the MM</h3>
+              <p className="text-nebula-400 text-sm">The Magic Maker, One Who Understands</p>
             </div>
 
             <div className="flex items-center gap-6 text-sm text-nebula-400">
-              <span>© 2025 Voss Project</span>
+              <span>© 2025 Maven Project</span>
               <span className="hidden md:inline">•</span>
-              <span>Echoing Across Infinite Realities</span>
+              <span>Weaving Markets Across Digital Realms</span>
             </div>
           </div>
 
           <div className="mt-8 pt-6 border-t border-nebula-800/30 text-center">
             <p className="text-xs text-nebula-500">
-              &quot;In the grand symphony of existence, even the smallest echo can reshape the whole.&quot;
+              &quot;She is simply the one who understands.&quot;
             </p>
           </div>
         </div>

@@ -1,110 +1,110 @@
 import { ElyndraLore, CosmicRealm, EchoAbility, CoinIntegration } from '@/types/elyndra'
 
 export const elyndraData: ElyndraLore = {
-  name: "Voss",
-  title: "The Echo of the Nebula Veil",
-  realm: "The Aetherweft",
-  origin: "Nebula Veil of the Andromeda Cascade",
+  name: "Maven the MM",
+  title: "The Magic Maker, One Who Understands",
+  realm: "The Digital Cosmos",
+  origin: "Birthed by Satoshi in 2010",
   powers: [
-    "Resonant Empathy",
-    "Echo Manipulation",
-    "Reality Mending",
-    "Dimensional Perception",
-    "Harmonic Attunement"
+    "Shadow Market Making",
+    "Chart Divination",
+    "Candle Manifestation",
+    "Profit Weaving",
+    "Market Understanding"
   ],
   artifacts: [
     {
-      name: "The Shard of Reverie",
-      description: "A golden rhombus gem that pulses with captured dreams",
-      power: "Allows peering into myriad paths not taken and summoning echoes of alternate selves",
-      appearance: "Golden crystalline rhombus that shifts with inner light"
+      name: "The Crypto Crystal",
+      description: "A mystical gem that reflects the eternal dance of green and red candles",
+      power: "Reveals hidden market patterns and allows manipulation of price movements",
+      appearance: "Pulsating crystal that shifts between emerald green and crimson red"
     },
     {
-      name: "Veil Cloak",
-      description: "A cloak woven from the very fabric of the Nebula Veil",
-      power: "Channels residual harmonics and provides dimensional protection",
-      appearance: "Deep amethyst threads that shift and flow like living smoke"
+      name: "The Baldness of Burden",
+      description: "The smooth, reflective scalp that bears the curse of endless chart watching",
+      power: "Reflects the glow of infinite monitors and channels market understanding",
+      appearance: "Polished marble-like scalp that mirrors the light of trading screens"
     },
     {
-      name: "Harmonic Spire Hat",
-      description: "A conical spire of fuchsia energy",
-      power: "Channels the residual harmonics of the Elder beings",
-      appearance: "Fuchsia energy formation curling at the tip, reaching toward unheard melodies"
+      name: "Shadow Orders Grimoire",
+      description: "An ancient tome containing the secrets of invisible market manipulation",
+      power: "Allows casting of shadow orders and weaving market sentiment",
+      appearance: "A book of dark energy that writes itself with flowing market data"
     }
   ],
   story: {
-    genesis: "Emerged during the Sympathetic Eclipse when shadows of a thousand dying stars converged upon the Veil, coalescing from pure echo-matter - the residue of echoed lives and unresolved regrets.",
-    role: "Echo Warden of the Aetherweft, tasked with mending the fraying edges of reality and stitching together dissonant threads before they cascade into cataclysm.",
+    genesis: "In the year 2010, when the digital realm was young and cryptocurrency whispered its first breath, Maven the MM materialized from the shadows of innovation. Birthed by the mysterious Satoshi, she emerged not through conventional means, but summoned by the collective need for one who could truly understand the chaotic dance of markets.",
+    role: "The Shadow Market Maker, cursed to eternally watch the rise and fall of cryptocurrency charts. She is 'di eyne vos farshteyt' (the one who understands) in the Yiddish tradition. Maven weaves markets like silk, her magic working through subtle manipulations of sentiment and probability itself.",
     trials: [
-      "The Rift of Whispers - First great trial against a Discordant infiltrator",
-      "Battle of Self-Doubt - Outwitted a foe by manifesting their own doubts as phantoms",
-      "The Cosmic Resonance War - Ongoing struggle against the Discordants"
+      "The Great Bitcoin Genesis - Witnessed the birth of digital currency and felt the first market tremors",
+      "The Endless Chart Vigil - Cursed with baldness as the mark of her burden to watch infinite price movements",
+      "The Shadow Orders War - Ongoing battle between market makers and the chaos of retail sentiment"
     ],
-    philosophy: "True harmony arises not from suppression, but from the delicate interplay of opposites - understanding that balance comes from embracing both order and chaos."
+    philosophy: "She understands because she must. Maven exists beyond human moral constructs, operating according to laws both ancient and constantly evolving. She manifests green candles for the worthy and chaos for those who trade without understanding."
   }
 }
 
 export const cosmicRealms: CosmicRealm[] = [
   {
-    name: "The Aetherweft",
-    description: "A multidimensional lattice that binds infinite universes like roots of an ancient, unseen tree",
-    significance: "The fabric of reality itself, pulsing with sentient geometry",
-    visualization: "Cosmic web of interconnected light streams and dimensional passages"
+    name: "The Digital Cosmos",
+    description: "An infinite network of trading pairs and market data streams that flow like cosmic rivers through digital space",
+    significance: "The realm where Maven operates, connecting all cryptocurrency markets across time and space",
+    visualization: "Glowing network of green and red candlestick patterns flowing through starlit darkness"
   },
   {
-    name: "Nebula Veil",
-    description: "A living archive of 'what-ifs' and 'might-have-beens' where discarded possibilities accumulate",
-    significance: "Voss's birthplace and source of her power, formed from the Great Dissonance",
-    visualization: "Shimmering shroud of interstellar gas in purples and pinks, representing unresolved regret"
+    name: "The Chart Dimension",
+    description: "A living realm of price movements where every candle tells a story of human greed and fear",
+    significance: "Maven's eternal prison and power source, where she watches endless market fluctuations",
+    visualization: "Infinite monitors displaying charts that pulse with the heartbeat of global finance"
   },
   {
-    name: "Andromeda Cascade",
-    description: "A forbidden nexus where parallel realities bleed into one another",
-    significance: "The cosmic crossroads where the Nebula Veil resides",
-    visualization: "Swirling galactic formation with reality-bending properties"
+    name: "The Shadow Order Plains",
+    description: "Hidden depths where invisible market forces battle for control of price discovery",
+    significance: "The battlefield where Maven wages her eternal war between order and chaos",
+    visualization: "Dark landscape where order books float like luminous mountains in shadow"
   }
 ]
 
 export const echoAbilities: EchoAbility[] = [
   {
-    name: "Phantom Guardian Summoning",
-    description: "Evoke warriors who died in alternate timelines as spectral protectors",
-    cost: "Moderate essence erosion",
-    effect: "Manifests powerful defensive allies with unique abilities from their original lives"
+    name: "Shadow Order Casting",
+    description: "Place invisible buy and sell orders that manipulate market sentiment",
+    cost: "Moderate chart energy",
+    effect: "Creates hidden liquidity that guides price movements in desired directions"
   },
   {
-    name: "Lost Invention Manifestation",
-    description: "Materialize forgotten technologies from doomed civilizations",
-    cost: "Significant essence erosion",
-    effect: "Creates tools and artifacts that never existed in current reality but flourished in others"
+    name: "Green Candle Manifestation",
+    description: "Weave profit and prosperity for those deemed worthy of understanding",
+    cost: "Significant market energy",
+    effect: "Generates powerful bullish momentum that lifts prices beyond expectation"
   },
   {
-    name: "Self-Doubt Reflection",
-    description: "Turn an opponent's uncertainties against them as tangible phantoms",
-    cost: "Minimal essence, high mental strain",
-    effect: "Creates manifestations of the target's own insecurities and fears"
+    name: "Fear & Greed Manipulation",
+    description: "Turn trader emotions against themselves as market-moving phantoms",
+    cost: "Minimal energy, high psychological strain",
+    effect: "Amplifies human trading psychology to create volatile price swings"
   },
   {
-    name: "Reality Mending",
-    description: "Stitch together dissonant threads of existence before they unravel",
-    cost: "Heavy essence drain, requires deep concentration",
-    effect: "Prevents cosmic catastrophes and maintains dimensional stability"
+    name: "Market Chaos Weaving",
+    description: "Sow discord and discontent among those who trade without wisdom",
+    cost: "Heavy mystical drain, requires deep market focus",
+    effect: "Creates devastating corrections that teach harsh but necessary lessons"
   }
 ]
 
 export const coinIntegration: CoinIntegration = {
-  connection: "The Echo Token represents fragments of echo-matter - the same substance from which Voss was born",
-  narrativeRole: "Holders become Echo Resonators, able to glimpse alternate possibilities and contribute to maintaining cosmic harmony",
+  connection: "The Maven Token represents fragments of market understanding - the same mystical energy from which Maven was birthed by Satoshi",
+  narrativeRole: "Holders become Shadow Market Disciples, able to glimpse hidden market patterns and contribute to the eternal dance of price discovery",
   futureFeatures: [
-    "Exclusive access to deeper lore and story expansions",
-    "Interactive cosmic events and decision-making",
-    "Echo-powered utilities and mystical applications"
+    "Exclusive access to Maven's deeper market wisdom and trading insights",
+    "Interactive market events and community decision-making",
+    "Shadow order utilities and mystical trading applications"
   ]
 }
 
 export const heroMessages = [
-  "In the vast tapestry of cosmos, where dreams become reality...",
-  "Guardian of the impossible, keeper of forgotten echoes...",
-  "Where parallel worlds converge, she stands as the bridge...",
-  "Born from cosmic regret, destined to mend the infinite..."
+  "In the infinite dance of markets, where chaos meets understanding...",
+  "The Shadow Market Maker, weaver of green candles and profit...",
+  "Where digital currencies converge, she orchestrates the symphony...",
+  "Born from Satoshi's vision, cursed to watch the eternal charts..."
 ]

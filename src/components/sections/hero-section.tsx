@@ -50,7 +50,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.4, delay: 0.6 }}
               >
-                Voss
+                Maven the MM
               </motion.h1>
               <motion.p
                 className="text-xl md:text-2xl text-nebula-300 font-light"
@@ -58,7 +58,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, delay: 0.9 }}
               >
-                The Echo of the Nebula Veil
+                The Magic Maker, One Who Understands
               </motion.p>
             </div>
 
@@ -70,7 +70,7 @@ export function HeroSection() {
               transition={{ duration: 1.2, delay: 1.2 }}
             >
               <p className="text-lg text-nebula-200 italic">
-                In the vast tapestry of cosmos, where dreams become reality...
+                In the infinite dance of markets, where chaos meets understanding...
               </p>
             </motion.div>
 
@@ -86,7 +86,7 @@ export function HeroSection() {
                 onClick={handleExploreClick}
                 className="glow-purple"
               >
-                Explore the Aetherweft
+                Enter the Digital Cosmos
               </CosmicButton>
               <CosmicButton
                 variant="secondary"
@@ -100,7 +100,7 @@ export function HeroSection() {
                 size="lg"
                 onClick={handleJoinClick}
               >
-                Join the Echo
+                Join the Shadow Markets
               </CosmicButton>
             </motion.div>
 
@@ -113,15 +113,15 @@ export function HeroSection() {
             >
               <div className="text-center">
                 <div className="text-2xl font-bold text-gradient">∞</div>
-                <div className="text-sm text-nebula-400">Parallel Worlds</div>
+                <div className="text-sm text-nebula-400">Market Pairs</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-gradient">1</div>
-                <div className="text-sm text-nebula-400">Echo Warden</div>
+                <div className="text-sm text-nebula-400">Magic Maker</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-gradient">♦</div>
-                <div className="text-sm text-nebula-400">Shard of Reverie</div>
+                <div className="text-2xl font-bold text-gradient">◈</div>
+                <div className="text-sm text-nebula-400">Crypto Crystal</div>
               </div>
             </motion.div>
           </motion.div>
@@ -141,7 +141,7 @@ export function HeroSection() {
               <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-nebula-500/40 bg-gradient-to-br from-nebula-800/20 to-cosmic-void/40 backdrop-blur-sm">
                 <Image
                   src="/voss.png"
-                  alt="Voss, the Echo of the Nebula Veil"
+                  alt="Maven the MM, the Magic Maker who understands the markets"
                   width={400}
                   height={400}
                   className="w-full h-full object-cover"
@@ -158,9 +158,9 @@ export function HeroSection() {
               <div className="absolute -bottom-8 -left-6 w-6 h-6 rounded-full bg-nebula-400/40 blur-sm" />
               <div className="absolute top-1/3 -left-8 w-4 h-4 rounded-full bg-cosmic-pink/30 blur-sm" />
 
-              {/* Shard of Reverie effect */}
+              {/* Crypto Crystal effect */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="w-6 h-6 rotate-45 bg-gradient-to-br from-yellow-400 to-orange-500 opacity-60"
+                <div className="w-6 h-6 rotate-45 bg-gradient-to-br from-green-400 to-red-500 opacity-60 animate-pulse"
                      style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }} />
               </div>
             </div>

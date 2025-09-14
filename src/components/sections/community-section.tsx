@@ -5,36 +5,36 @@ import { CosmicButton } from '@/components/ui/cosmic-button'
 import { CosmicCard } from '@/components/ui/cosmic-card'
 import { FloatingElement } from '@/components/ui/floating-element'
 import { coinIntegration } from '@/lib/data'
-import { Users, Coins, Sparkles, Globe, MessageCircle, Twitter } from 'lucide-react'
+import { Users, Coins, Sparkles, Globe, MessageCircle, Twitter, Rocket } from 'lucide-react'
 
 export function CommunitySection() {
   const communityFeatures = [
     {
       icon: Users,
-      title: 'Echo Resonators',
-      description: 'Join fellow travelers in the cosmic journey, share insights, and collectively maintain the harmony of the Aetherweft.',
+      title: 'Market Disciples',
+      description: 'Join fellow traders in the shadow realm, share market insights, and learn the mystical arts of understanding.',
     },
     {
       icon: Coins,
-      title: 'Cosmic Token',
-      description: 'Hold fragments of echo-matter, the same mystical substance from which Voss emerged in the Nebula Veil.',
+      title: 'Maven Token',
+      description: 'Hold fragments of market understanding, the same mystical energy from which Maven was birthed by Satoshi.',
     },
     {
       icon: Sparkles,
-      title: 'Exclusive Access',
-      description: 'Unlock deeper lore expansions, participate in cosmic events, and influence Voss\'s future adventures.',
+      title: 'Trading Wisdom',
+      description: 'Unlock Maven\'s deeper market insights, participate in shadow market events, and gain exclusive trading knowledge.',
     },
     {
       icon: Globe,
-      title: 'Multiverse Governance',
-      description: 'Participate in community decisions that shape the direction of Voss\'s cosmic missions and story development.',
+      title: 'Shadow Governance',
+      description: 'Participate in community decisions that influence Maven\'s market-making magic and future developments.',
     }
   ]
 
   const socialLinks = [
-    { icon: Twitter, label: 'Twitter', href: '#', color: 'hover:text-blue-400' },
-    { icon: MessageCircle, label: 'Discord', href: '#', color: 'hover:text-indigo-400' },
-    { icon: Globe, label: 'Website', href: '#', color: 'hover:text-purple-400' }
+    { icon: Twitter, label: 'X (Twitter)', href: 'https://x.com/PLACEHOLDER_MAVEN_X', color: 'hover:text-blue-400' },
+    { icon: Rocket, label: 'Pump.fun', href: 'https://pump.fun/PLACEHOLDER_MAVEN_PUMP', color: 'hover:text-green-400' },
+    { icon: MessageCircle, label: 'Telegram', href: 'https://t.me/PLACEHOLDER_MAVEN_TG', color: 'hover:text-indigo-400' }
   ]
 
   return (
@@ -51,10 +51,10 @@ export function CommunitySection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-6xl font-bold echo-text mb-4">
-            Join the Echo
+            Join the Shadow Markets
           </h2>
           <p className="text-xl text-nebula-300 max-w-2xl mx-auto">
-            Become an Echo Resonator and help maintain the cosmic balance alongside Voss
+            Become a Shadow Market Disciple and learn the mystical arts of market understanding alongside Maven
           </p>
         </motion.div>
 
@@ -92,7 +92,7 @@ export function CommunitySection() {
           <CosmicCard className="p-8" glow>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
-                <h3 className="text-3xl font-bold text-gradient">The Echo Token</h3>
+                <h3 className="text-3xl font-bold text-gradient">The Maven Token</h3>
                 <p className="text-nebula-200 leading-relaxed">
                   {coinIntegration.connection}
                 </p>
@@ -125,8 +125,8 @@ export function CommunitySection() {
                   <div className="w-64 h-64 mx-auto rounded-full bg-gradient-conic from-nebula-600 via-cosmic-magenta to-nebula-600 p-1">
                     <div className="w-full h-full rounded-full bg-cosmic-deep flex items-center justify-center">
                       <div className="text-center">
-                        <div className="text-4xl mb-2">♦</div>
-                        <div className="text-lg font-semibold text-gradient">Echo Token</div>
+                        <div className="text-4xl mb-2">◈</div>
+                        <div className="text-lg font-semibold text-gradient">Maven Token</div>
                         <div className="text-sm text-nebula-400">Live & Trading</div>
                       </div>
                     </div>
@@ -147,9 +147,9 @@ export function CommunitySection() {
           transition={{ duration: 0.8 }}
         >
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-cosmic-pink">Ready to Echo Across the Cosmos?</h3>
+            <h3 className="text-2xl font-bold text-cosmic-pink">Ready to Enter the Shadow Markets?</h3>
             <p className="text-nebula-300 max-w-2xl mx-auto">
-              Join our growing community of cosmic explorers and become part of Voss&apos;s eternal journey through the multiverse.
+              Join our growing community of market disciples and become part of Maven&apos;s eternal dance through the digital cosmos.
             </p>
           </div>
 

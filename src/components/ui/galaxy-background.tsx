@@ -81,6 +81,33 @@ export function GalaxyBackground() {
           `
         }}
       />
+
+      {/* Supernova effect */}
+      <div
+        className="absolute top-1/4 right-1/3 w-8 h-8 animate-ping"
+        style={{
+          background: `radial-gradient(circle,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(255, 215, 0, 0.7) 20%,
+            rgba(255, 69, 0, 0.5) 40%,
+            rgba(255, 20, 147, 0.3) 60%,
+            transparent 80%
+          )`
+        }}
+      />
+
+      {/* Secondary supernova glow */}
+      <div
+        className="absolute top-1/4 right-1/3 w-16 h-16 animate-pulse opacity-40"
+        style={{
+          background: `radial-gradient(circle,
+            transparent 30%,
+            rgba(255, 215, 0, 0.1) 40%,
+            rgba(255, 69, 0, 0.05) 60%,
+            transparent 80%
+          )`
+        }}
+      />
     </div>
   )
 }

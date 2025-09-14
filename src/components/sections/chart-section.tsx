@@ -38,10 +38,10 @@ export function ChartSection({ contractAddress }: ChartSectionProps) {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold echo-text mb-4">
-            Cosmic Trading Portal
+            Shadow Market Portal
           </h2>
           <p className="text-xl text-nebula-300 max-w-2xl mx-auto">
-            Track Voss&apos;s echo across the trading dimensions
+            Watch Maven&apos;s magic unfold through the mystical art of market making
           </p>
         </motion.div>
 
@@ -81,11 +81,21 @@ export function ChartSection({ contractAddress }: ChartSectionProps) {
                   </div>
                 ) : (
                   <div className="space-y-4">
-                    <div className="bg-cosmic-void/60 rounded-xl p-6 border border-nebula-700/40">
-                      <p className="text-nebula-400 text-center">
-                        🌌 Contract address will be revealed when Voss emerges from the Nebula Veil
+                    <div className="bg-cosmic-void/60 rounded-xl p-4 border border-nebula-700/40">
+                      <p className="text-nebula-300 text-sm font-mono break-all text-center">
+                        MAVEN_CONTRACT_ADDRESS_PLACEHOLDER
                       </p>
                     </div>
+
+                    <CosmicButton
+                      onClick={() => copyToClipboard('MAVEN_CONTRACT_ADDRESS_PLACEHOLDER')}
+                      className="w-full"
+                    >
+                      <div className="flex items-center justify-center gap-2">
+                        {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                        {copied ? 'Copied!' : 'Copy Address'}
+                      </div>
+                    </CosmicButton>
                   </div>
                 )}
               </div>
@@ -110,7 +120,7 @@ export function ChartSection({ contractAddress }: ChartSectionProps) {
                 {contractAddress ? (
                   <div className="space-y-4">
                     <p className="text-nebula-300">
-                      View real-time trading data and cosmic price movements
+                      Witness Maven&apos;s shadow orders and mystical price movements in real-time
                     </p>
 
                     <CosmicButton
@@ -126,11 +136,20 @@ export function ChartSection({ contractAddress }: ChartSectionProps) {
                   </div>
                 ) : (
                   <div className="space-y-4">
-                    <div className="bg-cosmic-void/60 rounded-xl p-6 border border-nebula-700/40">
-                      <p className="text-nebula-400 text-center">
-                        📈 Chart will materialize once trading begins in the cosmic marketplace
-                      </p>
-                    </div>
+                    <p className="text-nebula-300">
+                      Witness Maven&apos;s shadow orders and mystical price movements in real-time
+                    </p>
+
+                    <CosmicButton
+                      onClick={() => window.open('https://dexscreener.com', '_blank')}
+                      className="w-full"
+                      variant="secondary"
+                    >
+                      <div className="flex items-center justify-center gap-2">
+                        <TrendingUp className="w-4 h-4" />
+                        View on DexScreener
+                      </div>
+                    </CosmicButton>
                   </div>
                 )}
               </div>
