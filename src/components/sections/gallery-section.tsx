@@ -168,7 +168,7 @@ export function GallerySection({ media = defaultMedia }: GallerySectionProps) {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <CosmicCard
-                className="group cursor-pointer overflow-hidden p-0 h-64"
+                className="group cursor-pointer overflow-hidden p-0 aspect-square"
                 onClick={() => handleItemClick(item)}
               >
                 <div className="relative w-full h-full">
@@ -178,34 +178,43 @@ export function GallerySection({ media = defaultMedia }: GallerySectionProps) {
                       alt={item.title}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   ) : (
                     <div className="relative w-full h-full">
                       <video
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         poster={item.thumbnail}
+                        autoPlay
                         muted
                         loop
                         playsInline
+                        onMouseEnter={(e) => {
+                          const video = e.target as HTMLVideoElement;
+                          video.play().catch(() => {});
+                        }}
                       >
                         <source src={item.src} type="video/mp4" />
                       </video>
-                      <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
-                        <Play className="w-12 h-12 text-white/80 group-hover:text-white transition-colors" />
+                      {/* Subtle play indicator */}
+                      <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="bg-black/40 backdrop-blur-sm rounded-full p-2">
+                          <Play className="w-4 h-4 text-white/90" />
+                        </div>
                       </div>
                     </div>
                   )}
 
                   {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-cosmic-void/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-cosmic-void/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                   {/* Content overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-lg font-semibold text-white mb-1">
+                    <h3 className="text-lg font-semibold text-white mb-1 drop-shadow-lg">
                       {item.title}
                     </h3>
                     {item.description && (
-                      <p className="text-sm text-nebula-200 opacity-90">
+                      <p className="text-sm text-nebula-200 opacity-90 drop-shadow">
                         {item.description}
                       </p>
                     )}
