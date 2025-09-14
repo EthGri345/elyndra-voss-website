@@ -70,7 +70,7 @@ export function HeroSection() {
               transition={{ duration: 1.2, delay: 1.2 }}
             >
               <p className="text-lg text-nebula-200 italic">
-                In the infinite dance of markets, where chaos meets understanding...
+                Trust in the Market Maker
               </p>
             </motion.div>
 

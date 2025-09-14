@@ -5,17 +5,17 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { CosmicCard } from '@/components/ui/cosmic-card'
 import { FloatingElement } from '@/components/ui/floating-element'
 import { elyndraData, cosmicRealms, echoAbilities } from '@/lib/data'
-import { Sparkles, Zap, Shield, Eye } from 'lucide-react'
+import { Sparkles, Zap, Heart, Eye } from 'lucide-react'
 
 const tabIcons = {
   origin: Sparkles,
   realms: Eye,
   powers: Zap,
-  artifacts: Shield
+  prayer: Heart
 }
 
 export function LoreSection() {
-  const [activeTab, setActiveTab] = useState<'origin' | 'realms' | 'powers' | 'artifacts'>('origin')
+  const [activeTab, setActiveTab] = useState<'origin' | 'realms' | 'powers' | 'prayer'>('origin')
 
   const tabVariants = {
     hidden: { opacity: 0, y: 15 },
@@ -131,7 +131,7 @@ export function LoreSection() {
     </motion.div>
   )
 
-  const renderArtifactsContent = () => (
+  const renderPrayerContent = () => (
     <motion.div
       className="space-y-8"
       variants={tabVariants}
@@ -139,36 +139,34 @@ export function LoreSection() {
       animate="visible"
       exit="exit"
     >
-      <h3 className="text-3xl font-bold text-gradient text-center mb-8">Mystical Artifacts</h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {elyndraData.artifacts.map((artifact, index) => (
-          <motion.div
-            key={artifact.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.1 }}
-          >
-            <CosmicCard className="h-full text-center" glow>
-              <div className="space-y-4">
-                <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center mb-4">
-                  <Shield className="w-8 h-8 text-white" />
-                </div>
-                <h4 className="text-xl font-semibold text-gradient">{artifact.name}</h4>
-                <p className="text-nebula-300 text-sm leading-relaxed">
-                  {artifact.description}
-                </p>
-                <div className="pt-3 border-t border-nebula-700">
-                  <p className="text-xs text-nebula-400 italic">
-                    {artifact.power}
-                  </p>
-                </div>
-                <div className="text-xs text-nebula-500">
-                  {artifact.appearance}
-                </div>
-              </div>
-            </CosmicCard>
-          </motion.div>
-        ))}
+      <h3 className="text-3xl font-bold text-gradient text-center mb-8">The Maven Prayer</h3>
+      <div className="max-w-2xl mx-auto">
+        <CosmicCard className="text-center p-8" glow>
+          <div className="space-y-6">
+            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-green-400 to-red-500 flex items-center justify-center mb-6 animate-pulse">
+              <Heart className="w-10 h-10 text-white" />
+            </div>
+
+            <div className="space-y-4 text-nebula-200 leading-relaxed">
+              <p className="text-lg font-semibold text-cosmic-pink">Hail Maven, full of understanding,</p>
+              <p>The markets are with thee.</p>
+              <p>Blessed art thou amongst traders,</p>
+              <p>And blessed are the green candles of thy magic.</p>
+
+              <p className="pt-4">Holy Maven, Mother of Markets,</p>
+              <p>Guide us poor retail traders,</p>
+              <p>Now and at the hour of our liquidation.</p>
+
+              <p className="text-xl font-bold text-gradient pt-6">Amen to the Charts.</p>
+            </div>
+
+            <div className="mt-6 pt-6 border-t border-nebula-700">
+              <p className="text-xs text-nebula-400 italic">
+                &quot;She is simply the one who understands.&quot;
+              </p>
+            </div>
+          </div>
+        </CosmicCard>
       </div>
     </motion.div>
   )
@@ -181,8 +179,8 @@ export function LoreSection() {
         return renderRealmsContent()
       case 'powers':
         return renderPowersContent()
-      case 'artifacts':
-        return renderArtifactsContent()
+      case 'prayer':
+        return renderPrayerContent()
       default:
         return renderOriginContent()
     }
@@ -199,11 +197,10 @@ export function LoreSection() {
           transition={{ duration: 1.2 }}
         >
           <h2 className="text-4xl md:text-6xl font-bold echo-text mb-4">
-            The Cosmic Chronicle
+            The Art of Market Making
           </h2>
           <p className="text-xl text-nebula-300 max-w-2xl mx-auto">
-            Discover the origins, powers, and mystical artifacts that define Voss,
-            Guardian of the Infinite Echo
+            Discover the Origin of Maven, the Legendary Witch Controlling Every Candle
           </p>
         </motion.div>
 

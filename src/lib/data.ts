@@ -103,7 +103,7 @@ export const coinIntegration: CoinIntegration = {
 }
 
 export const heroMessages = [
-  "In the infinite dance of markets, where chaos meets understanding...",
+  "Trust in the Market Maker",
   "The Shadow Market Maker, weaver of green candles and profit...",
   "Where digital currencies converge, she orchestrates the symphony...",
   "Born from Satoshi's vision, cursed to watch the eternal charts..."
