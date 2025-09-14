@@ -96,7 +96,6 @@ export const coinIntegration: CoinIntegration = {
   connection: "The Echo Token represents fragments of echo-matter - the same substance from which Voss was born",
   narrativeRole: "Holders become Echo Resonators, able to glimpse alternate possibilities and contribute to maintaining cosmic harmony",
   futureFeatures: [
-    "Community governance of Voss's cosmic missions",
     "Exclusive access to deeper lore and story expansions",
     "Interactive cosmic events and decision-making",
     "Echo-powered utilities and mystical applications"
