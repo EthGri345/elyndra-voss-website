@@ -50,7 +50,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.4, delay: 0.6 }}
               >
-                Maven the MM
+                Maven
               </motion.h1>
               <motion.p
                 className="text-xl md:text-2xl text-nebula-300 font-light"
@@ -141,7 +141,7 @@ export function HeroSection() {
               <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-nebula-500/40 bg-gradient-to-br from-nebula-800/20 to-cosmic-void/40 backdrop-blur-sm">
                 <Image
                   src="/voss.png"
-                  alt="Maven the MM, the Spirit of Market Making who understands the markets"
+                  alt="Maven, the Spirit of Market Making who understands the markets"
                   width={400}
                   height={400}
                   className="w-full h-full object-cover"

@@ -1,7 +1,7 @@
 import { ElyndraLore, CosmicRealm, EchoAbility, CoinIntegration } from '@/types/elyndra'
 
 export const elyndraData: ElyndraLore = {
-  name: "Maven the MM",
+  name: "Maven",
   title: "The Spirit of Market Making, One Who Understands",
   realm: "The Digital Cosmos",
   origin: "Birthed by Satoshi in 2010",
@@ -33,7 +33,7 @@ export const elyndraData: ElyndraLore = {
     }
   ],
   story: {
-    genesis: "In the year 2010, when the digital realm was young and cryptocurrency whispered its first breath, Maven the MM materialized from the shadows of innovation. Birthed by the mysterious Satoshi, she emerged not through conventional means, but summoned by the collective need for one who could truly understand the chaotic dance of markets.",
+    genesis: "In the year 2010, when the digital realm was young and cryptocurrency whispered its first breath, Maven materialized from the shadows of innovation. Birthed by the mysterious Satoshi, she emerged not through conventional means, but summoned by the collective need for one who could truly understand the chaotic dance of markets.",
     role: "The Shadow Market Maker, cursed to eternally watch the rise and fall of cryptocurrency charts. She is 'di eyne vos farshteyt' (the one who understands) in the Yiddish tradition. Maven weaves markets like silk, her magic working through subtle manipulations of sentiment and probability itself.",
     trials: [
       "The Great Bitcoin Genesis - Witnessed the birth of digital currency and felt the first market tremors",

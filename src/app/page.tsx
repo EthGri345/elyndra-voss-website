@@ -35,7 +35,7 @@ export default function HomePage() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
-              <h3 className="text-xl font-semibold text-gradient mb-2">Maven the MM</h3>
+              <h3 className="text-xl font-semibold text-gradient mb-2">Maven</h3>
               <p className="text-nebula-400 text-sm">The Spirit of Market Making, One Who Understands</p>
             </div>
 
