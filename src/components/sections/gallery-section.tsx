@@ -117,6 +117,20 @@ const defaultMedia: MediaItem[] = [
     src: '/generated_video (7).mp4',
     title: 'Aetherweft Motion VII',
     description: 'Latest echoes from the ever-expanding cosmic realm'
+  },
+  {
+    id: '13',
+    type: 'image',
+    src: '/Untitled_Artwork (5).jpeg',
+    title: 'Cosmic Artwork VII',
+    description: 'Mystical energies flowing through dimensional boundaries'
+  },
+  {
+    id: '14',
+    type: 'video',
+    src: '/generated_video (8).mp4',
+    title: 'Aetherweft Motion VIII',
+    description: 'The newest manifestations of cosmic harmony'
   }
 ]
 
