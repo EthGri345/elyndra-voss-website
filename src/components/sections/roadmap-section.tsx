@@ -53,7 +53,6 @@ const roadmapItems: RoadmapItem[] = [
     description: 'Sustained development and evolution of the Voss ecosystem',
     features: [
       'Months of upcoming content planned!',
-      'Community-driven governance',
       'Expanding universe narrative'
     ],
     icon: Heart,
