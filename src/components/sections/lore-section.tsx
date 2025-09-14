@@ -200,7 +200,7 @@ export function LoreSection() {
             The Art of Market Making
           </h2>
           <p className="text-xl text-nebula-300 max-w-2xl mx-auto">
-            Discover the Origin of Maven, the Legendary Witch Controlling Every Candle
+            Discover the Origin of Maven, the Legendary Spirit Controlling Every Candle
           </p>
         </motion.div>
 

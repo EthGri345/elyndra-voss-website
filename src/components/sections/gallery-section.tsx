@@ -25,7 +25,7 @@ const defaultMedia: MediaItem[] = [
     type: 'image',
     src: '/voss.png',
     title: 'Maven Portrait',
-    description: 'The Market Maker in her mystical form'
+    description: 'The Spirit of Market Making in her mystical form'
   },
   {
     id: '2',
