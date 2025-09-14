@@ -2,7 +2,7 @@ import { ElyndraLore, CosmicRealm, EchoAbility, CoinIntegration } from '@/types/
 
 export const elyndraData: ElyndraLore = {
   name: "Maven the MM",
-  title: "The Magic Maker, One Who Understands",
+  title: "The Market Maker, One Who Understands",
   realm: "The Digital Cosmos",
   origin: "Birthed by Satoshi in 2010",
   powers: [

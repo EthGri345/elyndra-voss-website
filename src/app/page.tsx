@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
               <h3 className="text-xl font-semibold text-gradient mb-2">Maven the MM</h3>
-              <p className="text-nebula-400 text-sm">The Magic Maker, One Who Understands</p>
+              <p className="text-nebula-400 text-sm">The Market Maker, One Who Understands</p>
             </div>
 
             <div className="flex items-center gap-6 text-sm text-nebula-400">

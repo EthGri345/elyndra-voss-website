@@ -24,8 +24,8 @@ const defaultMedia: MediaItem[] = [
     id: '1',
     type: 'image',
     src: '/voss.png',
-    title: 'Voss Portrait',
-    description: 'The Echo Warden in her ethereal form'
+    title: 'Maven Portrait',
+    description: 'The Market Maker in her mystical form'
   },
   {
     id: '2',
@@ -194,8 +194,8 @@ export function GallerySection({ media = defaultMedia }: GallerySectionProps) {
             Echoes of the Aetherweft
           </h2>
           <p className="text-lg text-nebula-300">
-            Glimpses into the mystical realm where Voss weaves her cosmic tapestry,
-            captured through the dimensional lens of the Shard of Reverie.
+            Glimpses into the mystical realm where Maven weaves her market magic,
+            captured through the digital lens of the Crypto Crystal.
           </p>
         </motion.div>
 

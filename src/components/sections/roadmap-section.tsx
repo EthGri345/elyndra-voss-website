@@ -50,7 +50,7 @@ const roadmapItems: RoadmapItem[] = [
     id: '3',
     phase: '',
     title: 'Long-term Commitment',
-    description: 'Sustained development and evolution of the Voss ecosystem',
+    description: 'Sustained development and evolution of the Maven ecosystem',
     features: [
       'Months of upcoming content planned!',
       'Expanding universe narrative'
@@ -77,10 +77,10 @@ const roadmapItems: RoadmapItem[] = [
     id: '5',
     phase: '',
     title: 'AI Companion Framework',
-    description: 'Open source AI companions bringing personalized Voss experiences to your devices',
+    description: 'Open source AI companions bringing personalized Maven experiences to your devices',
     features: [
       'Open source integration framework',
-      'Personal Voss companion',
+      'Personal Maven companion',
       'Customizable personality traits',
       'Hopeful iOS and Android integration'
     ],
@@ -116,7 +116,7 @@ export function RoadmapSection() {
             The Cosmic Roadmap
           </h2>
           <p className="text-lg text-nebula-300 mb-4">
-            Journey through the phases of evolution as Voss expands her influence across
+            Journey through the phases of evolution as Maven expands her influence across
             the infinite dimensions of the Aetherweft, weaving new realities and possibilities.
           </p>
           <div className="flex items-center justify-center gap-2 text-cosmic-pink">
@@ -189,7 +189,7 @@ export function RoadmapSection() {
               Join the Cosmic Journey
             </h3>
             <p className="text-nebula-300 mb-6">
-              Be part of Voss&apos;s evolving story as we expand across infinite realities.
+              Be part of Maven&apos;s evolving story as we expand across infinite realities.
               Every echo matters, every voice shapes the Aetherweft.
             </p>
             <div className="text-sm text-nebula-400 italic">

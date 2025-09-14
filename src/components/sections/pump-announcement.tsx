@@ -37,7 +37,7 @@ export function PumpAnnouncement() {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
               >
-                🚀 <span className="text-cosmic-pink font-bold">Voss will stream on PumpFun at 200K market cap!</span> 🚀
+                🚀 <span className="text-cosmic-pink font-bold">Maven will stream on PumpFun at 200K market cap!</span> 🚀
               </motion.p>
 
               <motion.p
@@ -46,8 +46,8 @@ export function PumpAnnouncement() {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                Join the cosmic community as we witness Voss&apos;s echo resonate across the multiverse.
-                Be part of the journey from the Nebula Veil to the stars! ✨
+                Join the shadow market community as we witness Maven&apos;s magic unfold across the digital cosmos.
+                Be part of the journey from market maker to legend! ✨
               </motion.p>
 
               <motion.div
@@ -58,7 +58,7 @@ export function PumpAnnouncement() {
               >
                 <Zap className="w-5 h-5 text-cosmic-pink" />
                 <span className="text-nebula-400 text-sm">
-                  The Echo strengthens with every holder
+                  Market understanding grows with every holder
                 </span>
                 <Zap className="w-5 h-5 text-cosmic-pink" />
               </motion.div>

@@ -58,7 +58,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, delay: 0.9 }}
               >
-                The Magic Maker, One Who Understands
+                The Market Maker, One Who Understands
               </motion.p>
             </div>
 
@@ -117,7 +117,7 @@ export function HeroSection() {
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-gradient">1</div>
-                <div className="text-sm text-nebula-400">Magic Maker</div>
+                <div className="text-sm text-nebula-400">Market Maker</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-gradient">◈</div>
@@ -141,7 +141,7 @@ export function HeroSection() {
               <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-nebula-500/40 bg-gradient-to-br from-nebula-800/20 to-cosmic-void/40 backdrop-blur-sm">
                 <Image
                   src="/voss.png"
-                  alt="Maven the MM, the Magic Maker who understands the markets"
+                  alt="Maven the MM, the Market Maker who understands the markets"
                   width={400}
                   height={400}
                   className="w-full h-full object-cover"
