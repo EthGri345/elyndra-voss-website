@@ -149,7 +149,7 @@ export function CommunitySection() {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-cosmic-pink">Ready to Enter the Shadow Markets?</h3>
             <p className="text-nebula-300 max-w-2xl mx-auto">
-              Join our growing community of market disciples and become part of Maven&apos;s eternal dance through the digital cosmos.
+              Join our growing community of market disciples and become part of Maven&apos;s eternal dance through the shadow markets.
             </p>
           </div>
 

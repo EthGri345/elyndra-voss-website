@@ -3,7 +3,7 @@ import { ElyndraLore, CosmicRealm, EchoAbility, CoinIntegration } from '@/types/
 export const elyndraData: ElyndraLore = {
   name: "Maven",
   title: "The Spirit of Market Making, One Who Understands",
-  realm: "The Digital Cosmos",
+  realm: "The Shadow Markets",
   origin: "Birthed by Satoshi in 2010",
   powers: [
     "Shadow Market Making",
@@ -46,7 +46,7 @@ export const elyndraData: ElyndraLore = {
 
 export const cosmicRealms: CosmicRealm[] = [
   {
-    name: "The Digital Cosmos",
+    name: "The Shadow Markets",
     description: "An infinite network of trading pairs and market data streams that flow like cosmic rivers through digital space",
     significance: "The realm where Maven operates, connecting all cryptocurrency markets across time and space",
     visualization: "Glowing network of green and red candlestick patterns flowing through starlit darkness"

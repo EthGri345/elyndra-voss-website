@@ -86,7 +86,7 @@ export function HeroSection() {
                 onClick={handleExploreClick}
                 className="glow-purple"
               >
-                Enter the Digital Cosmos
+                Enter the Shadow Markets
               </CosmicButton>
               <CosmicButton
                 variant="secondary"

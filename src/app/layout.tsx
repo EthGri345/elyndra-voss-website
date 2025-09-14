@@ -11,8 +11,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://voss.com'),
   title: 'Maven | The Spirit of Market Making',
-  description: 'Enter the digital cosmos of Maven, the Spirit of Market Making. Discover her story, powers, mystical market magic, and hand drawn art where trading realities converge.',
-  keywords: 'Maven, market making, crypto trading, shadow markets, hand drawn art, digital cosmos, crypto project',
+  description: 'Enter the shadow markets of Maven, the Spirit of Market Making. Discover her story, powers, mystical market magic, and hand drawn art where trading realities converge.',
+  keywords: 'Maven, market making, crypto trading, shadow markets, hand drawn art, chart dimension, crypto project',
   authors: [{ name: 'Maven Community' }],
   creator: 'Maven Project',
   publisher: 'Maven Project',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://maven.com',
     title: 'Maven | The Spirit of Market Making',
-    description: 'Enter the digital cosmos of Maven, the Spirit of Market Making with hand drawn art.',
+    description: 'Enter the shadow markets of Maven, the Spirit of Market Making with hand drawn art.',
     siteName: 'Maven',
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Maven | The Spirit of Market Making',
-    description: 'Enter the digital cosmos of Maven, the Spirit of Market Making with hand drawn art.',
+    description: 'Enter the shadow markets of Maven, the Spirit of Market Making with hand drawn art.',
     creator: '@MavenSpirit',
     images: ['/voss.png'],
   },

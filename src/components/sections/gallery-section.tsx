@@ -32,7 +32,7 @@ const defaultMedia: MediaItem[] = [
     type: 'image',
     src: '/Untitled_Artwork.jpeg',
     title: 'Market Artwork I',
-    description: 'Hand drawn art visions from the Digital Cosmos dimensions'
+    description: 'Hand drawn art visions from the Shadow Markets dimensions'
   },
   {
     id: '3',
@@ -46,7 +46,7 @@ const defaultMedia: MediaItem[] = [
     type: 'image',
     src: '/Untitled_Artwork 2.jpeg',
     title: 'Cosmic Artwork III',
-    description: 'Hand drawn art fragments of the Digital Cosmos'
+    description: 'Hand drawn art fragments of the Shadow Markets'
   },
   {
     id: '5',

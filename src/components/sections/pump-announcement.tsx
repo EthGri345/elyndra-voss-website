@@ -46,7 +46,7 @@ export function PumpAnnouncement() {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                Join the shadow market community as we witness Maven&apos;s magic unfold across the digital cosmos.
+                Join the shadow market community as we witness Maven&apos;s magic unfold across the shadow markets.
                 Be part of the journey from market maker to legend! ✨
               </motion.p>
 
